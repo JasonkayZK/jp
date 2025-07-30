@@ -1,0 +1,54 @@
+name: Build & Deploy Blog
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node_version: [18]
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+        with:
+          ref: dev
+          
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            node_modules
+            public
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+            
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v3
+        with:
+          version: ${{ matrix.node_version }}
+          
+      - name: Add SSH key
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.hexo_deploy_pri }}
+          
+      - name: Setup hexo
+        run: |
+          git config --global user.email "jasonkayzk@gmail.com"
+          git config --global user.name "jasonkayzk"
+          npm install hexo-cli -g
+          npm install
+          
+      - name: Hexo deploy
+        env:
+          GIT_SSH_COMMAND: ssh -o StrictHostKeyChecking=no
+        run: |
+          hexo clean
+          hexo g
+          hexo d

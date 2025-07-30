@@ -1,0 +1,18 @@
+.post-reward(onclick='anzhiyu.addRewardMask()')
+  .reward-button.button--animated(title='作者に投げ銭')
+    i.anzhiyufont.anzhiyu-icon-hand-heart-fill
+    | 投げ銭する
+  .reward-main
+    .reward-all
+      span.reward-title ありがとう、前に進む力をくれて
+      ul.reward-group
+        each item in theme.reward.QR_code
+          - var clickTo = item.link ? item.link : item.img
+          li.reward-item
+            a(href=url_for(clickTo) target='_blank')
+              img.post-qr-code-img(src=url_for(item.img) alt=item.text)
+            .post-qr-code-desc=item.text
+      a.reward-main-btn(href='/about/#about-reward' target='_blank')
+        .reward-text 支援者リスト
+        .reward-dec あなたの支援が記事を書く価値を教えてくれました🙏
+#quit-box(onclick="anzhiyu.removeRewardMask()" style="display: none")

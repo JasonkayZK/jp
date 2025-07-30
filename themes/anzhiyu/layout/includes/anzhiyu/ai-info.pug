@@ -1,0 +1,26 @@
+- let pageFillDescription = get_page_fill_description()
+- let gptName = theme.post_head_ai_description.gptName
+- let mode = theme.post_head_ai_description.mode
+- let switchBtn = theme.post_head_ai_description.switchBtn
+if (pageFillDescription && page.ai)
+  .post-ai-description
+    .ai-title
+      i.anzhiyufont.anzhiyu-icon-bilibili
+      .ai-title-text AI-要約
+      if (switchBtn)
+        #ai-Toggle 切り替え
+      i.anzhiyufont.anzhiyu-icon-arrow-rotate-right
+      i.anzhiyufont.anzhiyu-icon-circle-dot(title="要約を読み上げる")
+      #ai-tag
+        if mode == "tianli"
+          = "Tianli GPT"
+        else
+          = gptName + " GPT"
+    .ai-explanation AI初期化中...
+    .ai-btn-box
+      .ai-btn-item 自己紹介 🙈
+      .ai-btn-item この記事の概要を生成 👋
+      .ai-btn-item 関連記事を推薦 📖
+      .ai-btn-item ホームページへ 🏠
+      .ai-btn-item#go-tianli-blog 愛発電で購入
+    script(data-pjax src=url_for(theme.asset.ai_abstract_js))

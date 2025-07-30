@@ -1,0 +1,11 @@
+#keyboard-tips(class='')
+  .keyboardTitle ブログのショートカットキー
+  .keybordList
+    each item in ["K ショートカット機能をオフ", "A コントロールパネルの開閉", "M 音楽の再生/一時停止", "D ダーク/ライトモード切替", "S サイト内検索", "R ランダムアクセス", "H ホームに戻る", "F フレンドリンク池", "L フレンドリンクページ", "P サイトについて", "I 標準/サイト右クリックメニュー"]
+      - let key = item.split(" ")[0]
+      - let content = item.split(" ")[1]
+      .keybordItem
+        .keyGroup
+          .key= "shift " + key
+        .keyContent
+          .content= content
