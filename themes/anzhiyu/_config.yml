@@ -780,7 +780,7 @@ preloader:
   # 1. fullpage-loading
   # 2. pace (progress bar)
   # else all
-  source: ２
+  source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url:
   avatar: https://raw.gitmirror.com/JasonkayZK/jp/dev/themes/anzhiyu/source/img/avatar.jpg # 自定加载动画义头像
