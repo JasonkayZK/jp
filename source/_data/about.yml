@@ -1,0 +1,101 @@
+- class_name: 自己紹介
+  subtitle: 風立ちぬ、いざ生きめやも。✨
+  avatarImg: https://raw.gitmirror.com/JasonkayZK/jp/dev/themes/anzhiyu/source/img/avatar.jpg
+  avatarSkills:
+    left:
+      - SCUT18(卒業)
+      - ex-@Tencent→教師
+      - プロ→アマチュアのプログラマー
+      - Distributed-System
+      - Cloud-Native
+    right:
+      - 🤖️ デジタルテクノロジー愛好家
+      - 🔍 情報共有と熱心な支援
+      - 🏃 着実に行動する人
+  name: Jasonkayzk
+  description: 元プログラマー、大学教員、ブロガーである。
+  aboutsiteTips:
+    tips: 追求すること
+    title1: 発信すること
+    title2: 愛すること、感じること
+    word:
+      - 学ぶ
+      - 生活
+      - シェア
+      - 経験
+  helloAbout: Hello there!
+  skillsTips:
+    tips: スキル
+    title: アンロック・クリエイティビティ
+  careers:
+    tips: キャリア
+    title: 進歩無制限
+    list:
+      - desc: HPU,電気工学
+        color: "#357ef5"
+      - desc: SCUT,電気理論の新技術
+        color: "#857ef5"
+      - desc: Tencent,クラウドコンピューティング
+        color: "#a57ef5"
+      - desc: PZXY,教師
+        color: "#e57ef5"
+    img: 
+  statistic:
+    link: /archives
+    text: 文章隧道
+    cover: https://bu.dusays.com/2023/05/01/644f4b037b930.jpg
+  map:
+    title: 今住んでいる場所：
+    StrengthenTitle: 中国
+    background: https://bu.dusays.com/2023/07/05/64a4c61cb20ef.jpg
+    backgroundDark: https://bu.dusays.com/2023/07/05/64a4c63495ac5.jpg
+  selfInfo:
+    selfInfoTips1: 生まれ
+    selfInfoContentYear: 1996
+    selfInfoTips2: SCUT
+    selfInfoContent2: 電気理論の新技術
+    selfInfoTips3: 現在の職業
+    selfInfoContent3: PZXY,教師
+  personalities:
+    author_name: アーキテクチャ
+    personality_type: INTJ-T
+    photo_url: https://bu.dusays.com/2023/07/05/64a4c63495ac5.jpg
+    personality_img: https://raw.gitmirror.com/JasonkayZK/blog_static/master/images/INTJ-T.svg
+    name_url: https://www.16personalities.com/ch/%E7%BB%93%E6%9E%9C/intj-t/m/8in90egbf
+  maxim:
+    maxim_tips: モットー
+    maxim_top: 風立ちぬ、
+    maxim_bottom: いざ生きめやも。
+  buff:
+    buff_tips: 特技
+    buff_top: 走る 歌う
+    buff_bottom: プログラミング
+  game:
+    game_tips: ゲーム
+    game_title: 原神
+    game_uid: "UID: 100385872"
+    game_bg: https://bu.dusays.com/2023/04/22/64433bf26e25d.webp
+  comic:
+    comic_tips: アニメ
+    comic_title: フォローしてるアニメ
+    comic_list:
+      - name: プラスティック・メモリーズ
+        href: https://www.bilibili.com/video/BV1mx411a7W9/
+        cover: https://raw.gitmirror.com/JasonkayZK/blog_static/master/images/anime-1.jpg
+      - name: 風が強く吹いている
+        href: https://www.bilibili.com/bangumi/play/ep250585
+        cover: https://raw.gitmirror.com/JasonkayZK/blog_static/master/images/anime-2.jpg
+      - name: 四月は君の嘘
+        href: https://www.bilibili.com/bangumi/play/ss1699
+        cover: https://raw.gitmirror.com/JasonkayZK/blog_static/master/images/anime-3.jpg
+
+  like:
+    like_tips: 好み
+    like_title: デジタルテクノロジー
+    like_bg: https://bu.dusays.com/2022/12/06/638f5f05ce1f7.jpg
+    like_bottom: コンピューターのソフトウェアとハードウェア
+  music:
+    music_tips: 音楽の好み
+    music_title: ミスチル、フォーク
+    music_bg: https://raw.gitmirror.com/JasonkayZK/blog_static/master/images/misuchiru.jpg
+    music_link: https://i.y.qq.com/n2/m/share/details/taoge.html?id=1240420503

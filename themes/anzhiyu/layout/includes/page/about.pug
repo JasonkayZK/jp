@@ -143,9 +143,9 @@ if site.data.about
           span.author-content-item-title= author_name
           .title2(style=`color:${personality_type_color ? personality_type_color : "#ac899c"}`)= personality_type
           .post-tips
-            | 在 
+            | もっと 
             a(href='https://www.16personalities.com/', target='_blank', rel='noopener nofollow') 16personalities
-            |  了解更多关于 
+            | についての情報こちらへ 👉
             a(target='_blank', rel='noopener external nofollow', href= name_url)= author_name
           .image
             img.no-lightbox(src=url_for(personality_img), alt='人格')
@@ -207,12 +207,12 @@ if site.data.about
             .author-content-item-tips=music_tips
             span.author-content-item-title=music_title
             .content-bottom
-              .tips=`跟 ${aboutName} 一起欣赏更多音乐`
+              .tips=`${aboutName} でもっと音楽を楽しもう👉`
             .banner-button-group
               a.banner-button(onclick=`pjax.loadUrl("${music_link}")`)
                 i.anzhiyufont.anzhiyu-icon-arrow-circle-right
                 |  
-                span.banner-button-text 更多推荐
+                span.banner-button-text その他のおすすめ
 
       if page.content
         .author-content

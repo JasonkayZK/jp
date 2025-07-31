@@ -4,7 +4,7 @@ menu:
     タグ: /tags/ || anzhiyu-icon-tags
     アーカイブ: /archives/ || anzhiyu-icon-box-archive
   フレンドリンク:
-    友人帳: /link/ || anzhiyu-icon-link
+    # 友人帳: /link/ || anzhiyu-icon-link
     # 朋友圈: /fcircle/ || anzhiyu-icon-artstation
     コメントボード: /comments/ || anzhiyu-icon-envelope
   # 私の:
@@ -15,7 +15,7 @@ menu:
   About:
     自己紹介: /about/ || anzhiyu-icon-paper-plane
     雑談: /essay/ || anzhiyu-icon-lightbulb
-    ランダムに閲覧: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+    # ランダムに閲覧: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
 
 # nav相关配置
 nav:
@@ -431,7 +431,7 @@ footer:
   # 徽标部分配置项 https://shields.io/
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
   bdageitem:
-    enable: false
+    enable: true
     list:
       - link: https://hexo.io/ #徽标指向网站链接
         shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
@@ -449,34 +449,22 @@ footer:
       #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
       #   message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
   socialBar:
-    enable: false
+    enable: true
     centerImg:
     left:
-      # - title: email
-      #   link: mailto:anzhiyu-c@qq.com
-      #   icon: anzhiyu-icon-envelope
-      # - title: 微博
-      #   link: https://weibo.com/u/6378063631
-      #   icon: anzhiyu-icon-weibo
-      # - title: facebook
-      #   link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
-      #   icon: anzhiyu-icon-facebook1
-      # - title: RSS
-      #   link: atom.xml
-      #   icon: anzhiyu-icon-rss
+      - title: email
+        link: mailto:jasonkayzk@gmail.com
+        icon: anzhiyu-icon-envelope
+      - title: RSS
+        link: atom.xml
+        icon: anzhiyu-icon-rss
     right:
-      # - title: Github
-      #   link: https://github.com/anzhiyu-c
-      #   icon: anzhiyu-icon-github
-      # - title: Bilibili
-      #   link: https://space.bilibili.com/372204786
-      #   icon: anzhiyu-icon-bilibili
-      # - title: 抖音
-      #   link: https://v.douyin.com/DwCpMEy/
-      #   icon: anzhiyu-icon-tiktok
-      # - title: CC
-      #   link: /copyright
-      #   icon: anzhiyu-icon-copyright-line
+      - title: Github
+        link: https://github.com/jasonkayzk
+        icon: anzhiyu-icon-github
+      - title: X
+        link: https://x.com/Jasonkay_ZK
+        icon: anzhiyu-icon-link
   list:
     enable: false
     randomFriends: 3
@@ -1040,30 +1028,30 @@ css_prefix: true
 
 # 首页顶部相关配置
 home_top:
-  enable: false # 开关
+  enable: true # 开关
   timemode: date #date/updated
-  title: 生活は明るい
-  subTitle: すべてが可愛い。
-  siteText: anheyu.com
+  title: 風立ちぬ、🎐
+  subTitle: いざ生きめやも。✨
+  siteText: jasonkayzk
   category:
-    - name: 前端
-      path: /categories/前端开发/
+    - name: 読み
+      path: /categories/読み/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
-    - name: 大学
-      path: /categories/大学生涯/
+    - name: 文法
+      path: /categories/文法/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: anzhiyu-icon-fire
-    - name: 生活
-      path: /categories/生活日常/
+    - name: 試験
+      path: /categories/試験/
       shadow: var(--anzhiyu-shadow-green)
       class: green
       icon: anzhiyu-icon-book
   default_descr: どう見ても説明できません！
   swiper:
-    enable: false
+    enable: true
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css #swiper css依赖
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js #swiper js依赖
   banner:
@@ -1322,3 +1310,23 @@ CDN:
     # waterfall:
     # ali_iconfont_css:
     # accesskey_js:
+
+envelope_comment:
+  enable: true #控制开关
+  custom_pic:
+    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
+  message: #信笺正文，多行文本，写法如下
+    - 聞きたいことは？
+    - 言いたいことは？
+    - 何を言いたい？
+  bottom: 自動店員がご対応いたします！  #仅支持单行文本
+  height: #1024px，信封划出的高度
+  path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  front_matter: #【可选】comments页面的 front_matter 配置
+    title: コメントボード
+    comments: true
+    top_img: false
+    type: envelope

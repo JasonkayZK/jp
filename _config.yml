@@ -104,3 +104,9 @@ deploy:
   type: git
   repo: git@github.com:jasonkayzk/jp.git  # 替换为你的仓库地址
   branch: main  # 部署分支  
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
