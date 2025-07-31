@@ -17,7 +17,7 @@ block content
           !=catalog_list("categories")
         .category-bar-next#category-bar-next(onclick="anzhiyu.scrollCategoryBarToRight()")
           i.anzhiyufont.anzhiyu-icon-angle-double-right
-        a.catalog-more(href=url_for("/categories/"))!= 'もっと'
+        a.catalog-more(href="/jp/categories/")!= 'もっと'
       .article-sort-title= _p('page.category') + ' - ' + page.category
       +articleSort(page.posts, page.current)
       include includes/pagination.pug
