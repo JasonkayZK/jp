@@ -11,9 +11,9 @@ cover: 'https://img.paulzzh.com/touhou/random?x'
 
 ## **コンテンツ**
 
->   **レファレンス：xxx**
+>   **レファレンス：出口仁的N1~N5语法课**
 >
->   -   
+>   -   https://www.bilibili.com/video/BV1UG4y1g7Mm/
 
 
 
